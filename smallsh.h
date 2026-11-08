@@ -15,3 +15,9 @@
 
 #define FOREGROUND 	0
 #define BACKGROUND	1
+
+int userin(char *p);
+int gettok(char **outptr);
+int inarg(char c);
+int procline(void);
+int runcommand(char **cline, int where);
