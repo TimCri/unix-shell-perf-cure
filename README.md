@@ -1,1 +1,0 @@
-# unix-shell-perf-cure
