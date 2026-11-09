@@ -8,6 +8,7 @@
 #include <signal.h>   /* NEW: sigaction, SIGINT, SIGTSTP, ... */
 #include <errno.h>    /* NEW: errno, EINTR */
 #include <string.h>   /* NEW: strlen() in the SIGINT handler */
+#include <sys/stat.h> /* NEW: sys/stat.h for handling mkdir function */
  
 #define EOL         1   /* end of line */
 #define ARG         2   /* normal arguments */
@@ -16,6 +17,7 @@
  
 #define MAXARG    512   /* max. no. command args */
 #define MAXBUF    512   /* max. length input line */
+#define MAXJOBS   64    /* max. no. of jobs*/
  
 #define FOREGROUND  0
 #define BACKGROUND  1
