@@ -3,8 +3,10 @@
  
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h> /* exit() */
 #include <sys/wait.h>
-#include <stdlib.h>   /* exit() */
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <signal.h>   /* NEW: sigaction, SIGINT, SIGTSTP, ... */
 #include <errno.h>    /* NEW: errno, EINTR */
 #include <string.h>   /* NEW: strlen() in the SIGINT handler */
